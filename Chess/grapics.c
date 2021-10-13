@@ -9,6 +9,12 @@ void grapicDraw()
 		drawHor(120, 1 + 15 * i, 121);
 	for (int i = 0; i < 9; i++)
 		drawVer(120 + 30 * i, 1, 121);
+
+	for (int i = 1; i < 9; i++)
+		for (int j = 1; j < 9; j++)
+			drawCore(i, j);
+	
+	drawBorder(1, 1, PURPLE);
 }
 void drawVer(int x, int y, int length)
 {
@@ -27,6 +33,7 @@ void drawHor(int x, int y, int length)
 	for (int i = 0; i < length; i++)
 		printf(DOT);
 }
+
 void drawCore(int x, int y)
 {
 	setcolor(RETCOLOR(x, y));
@@ -55,7 +62,7 @@ void drawBorder(int x, int y, char color)
 	gotoxy(x, y + 13);
 	printf("                            ");
 }
-void drawCharacter(int x, int y, char color, char** input)
+void drawCharacter(int x, int y, char color, int (*input)[14])
 {
 	x = RETX(x);
 	y =	RETY(y);
@@ -64,7 +71,7 @@ void drawCharacter(int x, int y, char color, char** input)
 		for (int j = 0; j < 14; j++)
 			if (input[i][j])
 			{
+				gotoxy(x + j * 2, y + i);
 				printf(DOT);
-				gotoxy(x + i, x + j * 2);
 			}
 }

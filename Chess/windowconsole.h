@@ -26,6 +26,6 @@
 #define WIDTH 250
 #define HEIGHT 130
 
-void setting();
-void gotoxy(int, int);
-void setcolor(char);
+extern void setting();
+extern void gotoxy(int, int);
+extern void setcolor(char);

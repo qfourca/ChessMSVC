@@ -24,6 +24,9 @@
     <ClCompile Include="grapics.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="chess.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="windowconsole.h">
@@ -32,10 +35,33 @@
     <ClInclude Include="grapics.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="chess.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="개요.txt">
       <Filter>리소스 파일</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="pon.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="knight.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="bisop.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="rook.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="queen.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="king.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chess.c" />
     <ClCompile Include="grapics.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="windowconsole.c" />
@@ -146,9 +147,18 @@
   <ItemGroup>
     <ClInclude Include="grapics.h" />
     <ClInclude Include="windowconsole.h" />
+    <ClInclude Include="chess.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="개요.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bisop.txt" />
+    <Text Include="king.txt" />
+    <Text Include="knight.txt" />
+    <Text Include="pon.txt" />
+    <Text Include="queen.txt" />
+    <Text Include="rook.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
