@@ -114,7 +114,7 @@ void clicked()
 	}
 	else
 	{
-		if (canGoGrid[myCursorX][myCursorY] == 1)
+		if (canGoGrid[myCursorX][myCursorY] == 2)
 		{
 			int i;
 			int j;
